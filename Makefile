@@ -8,15 +8,6 @@ REQUIREMENTS_FILE = requirements.txt
 
 # Default target
 all:  create_venv run-genome-process
-# download unpack
-# # Download the file
-# download:
-# 	@mkdir -p $(DATA_DIR)
-# 	@wget -c $(URL) -O $(DATA_DIR)/mitochondrion.1.genomic.gbff.gz
-
-# # Unpack the .gz file and remove the compressed file
-# unpack:
-# 	@gunzip -f $(DATA_DIR)/mitochondrion.1.genomic.gbff.gz
 
 # Create Python virtual environment
 create_venv: $(VENV_DIR)/bin/activate
@@ -28,10 +19,6 @@ $(VENV_DIR)/bin/activate: $(REQUIREMENTS_FILE)
 	./$(VENV_DIR)/bin/pip install -U pip
 	./$(VENV_DIR)/bin/pip install -r $(REQUIREMENTS_FILE)
 	@echo "Virtual environment setup complete."
-
-# # Install Python requirements
-# install_requirements:
-# 	@$(VENV_DIR)/bin/pip install -r $(REQUIREMENTS_FILE)
 
 # Run Python script
 run-genome-process: venv
@@ -48,5 +35,5 @@ clean_venv:
 
 # Full cleanup
 clean: clean_data clean_venv
-# download unpack
+
 .PHONY: all  create_venv run-genome-process clean_data clean_venv clean
