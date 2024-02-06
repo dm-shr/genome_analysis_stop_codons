@@ -1,0 +1,71 @@
+gb_file_path:
+  # - stop-codon-analysis/stop_analysis/mitochondrion.new.genomic.gbff
+  # - stop-codon-analysis/stop_analysis/mitochondrion.2.genomic.gbff
+  # - data/mitochondrion.new.genomic.gbff
+  - data/mitochondrion.1.genomic.gbff
+
+# output_path: stop-codon-analysis/stop_analysis/genes_true_vertebrata_new_release_oct_2023.csv
+output_path: data/genes_vertebrata_2024.tsv
+
+taxonomy_path:
+  - Eukaryota
+  - Metazoa
+  - Chordata
+  - Craniata
+  - Vertebrata
+
+genes_names_dict:
+  ATP8: ATP8
+  ATP synthase F0 subunit 8: ATP8
+
+  ATP6: ATP6
+  ATP synthase F0 subunit 6: ATP6
+
+  ND1: ND1
+  NADH dehydrogenase subunit 1: ND1
+  nad1: ND1
+
+  ND2: ND2
+  NADH dehydrogenase subunit 2: ND2
+  nad2: ND2
+
+  ND3: ND3
+  NADH dehydrogenase subunit 3: ND3
+  NAD3: ND3
+
+  ND4: ND4
+  NADH dehydrogenase subunit 4 : ND4
+  nad4: ND4
+
+  ND4L: ND4L
+  NADH dehydrogenase subunit 4L: ND4L
+  nad4l: ND4L
+
+  ND5: ND5
+  NADH dehydrogenase subunit 5: ND5
+  nad5: ND5
+
+  ND6: ND6
+  NADH dehydrogenase subunit 6: ND6
+  nad6: ND6
+
+  COX1: COX1
+  cytochrome c oxidase subunit I: COX1
+  COXI: COX1
+  COI: COX1
+
+  COX2: COX2
+  cytochrome c oxidase subunit II: COX2
+  COII: COX2
+  COXII: COX2
+
+  COX3: COX3
+  cytochrome c oxidase subunit III: COX3
+  COXIII: COX3
+  COIII: COX3
+  
+  CYTB: CYTB
+  cob: CYTB
+  CTYB: CYTB
+  cytochrome b: CYTB
+  Cyt b: CYTB
