@@ -35,8 +35,8 @@ $(VENV_DIR)/bin/activate: $(REQUIREMENTS_FILE)
 
 # Run Python script
 run-genome-process: venv
-	@echo "Running genome_process.py..."
-	./$(VENV_DIR)/bin/python genome_process.py
+	@echo "Running gb_read_utils.py..."
+	./$(VENV_DIR)/bin/python src/gb_read_utils.py
 
 # Clean up data directory
 clean_data:
